@@ -1,30 +1,43 @@
 Which of the following are statements? Comment on the truth values of all the statements you encounter; if a sentence fails to be a statement, explain why.
 
-1. All swans are white.  yes
+1. All swans are white.  
+Statement: True/False (Empirically verifiable, but known to be false due to the existence of black swans).
 
-2. The fat cat sat on the mat.  yes
+2. The fat cat sat on the mat.
+Statement: True/False (Factually verifiable based on a specific scenario).
 
-3. Look in thy glass and tell whose face th viewest.  
+3. Look in thy glass and tell whose face th viewest. 
+Not a Statement: It is a command, not a declarative statement.
 
 4. My glass shall not persuade me I am old.
+Statement: Subjective (Interpretative truth value).
 
 5. Father Nikolsky penned his dying confession to Patriarch Arsen III Charnoyevich of Peç in the pitch dark, somewhere in Poland, using a mixture of gunpowder and saliva, and a quick Cyrillic hand, while the innkeeper's wife scolded and cursed him through the bolted door.  
+Statement: True/False (Can be factually verified, although details make it complex).
 
 6. 1,000,000,000 is the largest number.
+Statement: False (Mathematically incorrect, as numbers are infinite).
 
 7. There is no largest number.
+Statement: True (Numbers are infinite).
 
 8. There may or may not be a largest number.
+Statement: True/False (Philosophical, but mathematically should be false since numbers are infinite).
 
 9. Intelligent life abouds in the universe.
+Statement: True/False (Currently speculative and cannot be empirically verified).
 
 10. This definitely is a statement.
+Statement: True (It is a self-referential statement).
 
 11. The speaker is lying.
+Paradox: Creates a paradox (If true, it must be false and vice versa).
 
 12. This is exercise number 12.
+Statement: True/False (Contextually verifiable).
 
 13. This sentence no verb.  
+Not a Statement: Grammatically incorrect.
 
 14. "potato" is spelled p-o-t-a-t-o-e.
 
@@ -34,17 +47,25 @@ p: "Our mayor is trustworthy,"
 q: "Our mayor is a good speller,"
 r = "Our mayor is a patriot."
 Express each of the following statements in logical form:
+Statement: False (Incorrect spelling).
+
 15. Although our mayor is not trustworthy, he is a good speller.
+¬𝑝∧𝑞
 
 16. Either our mayor is trustworthy, or he is a good speller.
+𝑝∨𝑞
 
 17. Our mayor is a trustworthy patriot who spells well.
+𝑝∧𝑞∧𝑟
 
 18. While our mayor is both trustworthy and patriotic, he is not a good speller.
+(𝑝∧𝑟)∧¬𝑞
 
 19. It may or may not be the case that our mayor is trustworthy.
+𝑝∨¬𝑝
 
 20. Either our mayor is not trustworthy or not a patriot, yet he is an excellent speller.
+(¬𝑝∨¬𝑟)∧𝑞
 
 Let
 
@@ -53,48 +74,66 @@ q: "Carla is a good teacher,"
 r: "Willis' students hate math,"
 s: "Carla's students hate math."
 Express the following in words:
-21. p(~r)	d
-22. (~p)(~q)
-23. p(r(~q))	
-24. (r(~p))q
-25. q(~q)	
-26. ((~p)(~s))q
-27. r(~r)	
-28. (~s)(~r)
-29. ~(qs)	30. ~(pr)
+21. p(~r)	d: Willis is a good teacher and Willis' students do not hate math.
+22. (~p)(~q): Willis is not a good teacher and Carla is not a good teacher.
+23. p(r(~q)):	Willis is a good teacher and Willis' students hate math and Carla is not a good teacher.
+24. (r(~p))q: Willis' students hate math and Willis is not a good teacher and Carla is a good teacher.
+25. q(~q)	: Carla is a good teacher and Carla is not a good teacher (Contradiction).
+26. ((~p)(~s))q:Willis is not a good teacher and Carla's students do not hate math, and Carla is a good teacher.
+27. r(~r)	:Willis' students hate math and Willis' students do not hate math (Contradiction).
+28. (~s)(~r):Carla's students do not hate math and Willis' students do not hate math.
+29. ~(qs):It is not the case that Carla is a good teacher and Carla's students hate math.	
+30. ~(pr):It is not the case that Willis is a good teacher and Willis' students hate math.
+
 Assume that it is true that "Polly sings well," it is false that "Quentin writes well," and it is true that "Rita is good at math." Determine the truth of each of the following statements.
 31. Polly sings well and Quentin writes well.
+False (Since Quentin writes well is false).
 
 32. Polly sings well or Quentin writes well.
+True (Since Polly sings well is true).
 
 33. Polly sings poorly and Quentin writes well.
+False (Polly sings poorly is false).
 
 34. Polly sings poorly or Quentin writes poorly.
+False (Both Polly sings poorly and Quentin writes poorly are false).
 
 35. Either Polly sings well and Quentin writes poorly, or Rita is good at math.
+True (Rita is good at math is true).
 
 36. Either Polly sings well and Quentin writes poorly, or Rita is not good at math.
+True (Since Polly sings well and Quentin writes poorly is false, but Rita is good at math is true).
 
 37. Either Polly signs well or Quentin writes well, or Rita is good at math.
+True (Polly sings well is true).
 
 38. Either Polly sings well and Quentin writes well, or Polly sings well and Rita is good at math.
+True (Polly sings well and Rita is good at math is true).
 
 39. Polly sings well, and either Quentin writes well or Rita is good at math.
+True (Rita is good at math is true).
 
 40. Polly sings poorly, or Quentin writes poorly and Rita is good at math.
+True (Rita is good at math is true).
 
 Communication and Reasoning Exercises
 41. The statement that either p or q is true, but not both is called the exclusive disjunction of p and q, which we shall write as p # q. Give a formula for p # q in terms of the logical operators ~,  and .
+p # q: (𝑝∨𝑞)∧¬(𝑝∧𝑞)
 
 42. The statement that either p and q are both true, or neither is true, is called the biconditional of p and q, and write it as pq. Give a formula for pq in terms of the logical operators ~,  and .
+p \iff q: (𝑝∧𝑞)∨(¬𝑝∧¬𝑞)
 
 43. Referring to Exercise 41, give an example of an everyday usage of exclusive disjunction.
+Example of Exclusive Disjunction: You can have either tea or coffee, but not both.
 
 44. Referring to Exercise 42, give an example of an everyday usage of the biconditional.
+Example of Biconditional: You will pass the course if and only if you score 60% or above.
 
 45. Give an example of a self-referential question that is its own answer.  
+Example of a Self-Referential Question: Is this a question?
 
 46. Comment on the following pair of sentences:
 
 The next statement is false.
 The preceeding statement is true.
+This pair creates a paradox known as the Liar Paradox. If the first statement is true, then the next statement (which says the first is false) would be false, contradicting itself. Conversely, if the first statement is false, then the next statement is true, which again contradicts itself.
